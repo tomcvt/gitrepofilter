@@ -21,6 +21,8 @@ public class FilterService {
         List<RepositoryResponse> filteredRepositories = repositories.stream()
                 .filter(repo -> !repo.fork())
                 .toList();
+
+        //System.out.println("Filtered repositories (not forks): " + filteredRepositories);
             
         List<RepositoryWithBranches> result = new ArrayList<>();
         

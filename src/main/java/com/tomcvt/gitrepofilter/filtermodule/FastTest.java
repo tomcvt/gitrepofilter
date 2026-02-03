@@ -2,7 +2,9 @@ package com.tomcvt.gitrepofilter.filtermodule;
 
 import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.ApplicationListener;
+import org.springframework.stereotype.Service;
 
+@Service
 public class FastTest implements ApplicationListener<ApplicationReadyEvent> {
 
     FilterService filterService;
