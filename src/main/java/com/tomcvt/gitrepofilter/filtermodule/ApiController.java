@@ -1,5 +1,9 @@
 package com.tomcvt.gitrepofilter.filtermodule;
 
+import java.util.List;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -13,7 +17,7 @@ class ApiController {
     }
 
     @GetMapping("/filter-repositories/{username}")
-    public List<Repository> filterRepositories(@PathVariable String username) {
-
+    public List<RepositoryWithBranches> filterRepositories(@PathVariable String username) {
+        return filterService.filterRepositories(username);
     }
 }
