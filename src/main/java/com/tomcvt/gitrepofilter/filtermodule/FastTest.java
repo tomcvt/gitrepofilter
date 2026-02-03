@@ -15,8 +15,8 @@ public class FastTest implements ApplicationListener<ApplicationReadyEvent> {
 
     @Override
     public void onApplicationEvent(ApplicationReadyEvent event) {
-        System.out.println("FastTest triggered");
-        var repos = filterService.filterRepositories("tomcvt");
-        System.out.println("Filtered repositories: " + repos);
+        //System.out.println("FastTest triggered");
+        //var repos = filterService.filterRepositories("tomcvt");
+        //System.out.println("Filtered repositories: " + repos);
     }
 }
